@@ -1,0 +1,33 @@
+{
+  "name": "@rusintez/batch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "lib/cli.js",
+  "scripts": {
+    "test": "mocha -R spec -t 10000 test",
+    "cover": "nyc --reporter=text --reporter=html npm run test"
+  },
+  "semistandard": {
+    "env": ["mocha"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "debug": "^4.1.1",
+    "generic-pool": "^3.5.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.3",
+    "serialize-error": "^3.0.0",
+    "uuid": "^3.3.2",
+    "x-ray": "^2.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "frequency-counter": "^1.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
